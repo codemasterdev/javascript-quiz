@@ -70,7 +70,38 @@
 
         <!-- HIGH SCORE END -->
 
+        <!-- Section to display correct or incorrect answer text to user -->
+        <section id="answer-text-container">
+            <div class="answer-text hidden ">
+                <h3 class="correct-incorrect-text">Correct, Great Job!!! </h3>
+            </div>
+        </section>
 
+        <!-- Section for displaying high scores -->
+        <section id="high-score-display-container">
+            <div class="high-score-content hidden">
+                <h4 class="high-scores-title-text">High Scores</h4>
+                <!-- Create an ordered list to append scores to as li elements -->
+                <ul class="high-scores-list">
+                    <!-- Leave empty for adding scores -->
+                </ul>
+            </div>
+
+        </section>
+        <!-- QUESTION CONTAINER -->
+        <section id="question-container">
+            <div id="answer-choice-container" class="hidden">
+                <h2 class="question-title-text">Question goes here!</h2>
+                <div class="multiple-choice-options">
+                    <!-- Create the buttons for the question choices and calls function with selection as argument-->
+                    <button id="answer-a-btn" onclick="answerQuestion('A')" class="quiz-button">Answer A</button>
+                    <button id="answer-b-btn" onclick="answerQuestion('B')" class="quiz-button">Answer B</button>
+                    <button id="answer-c-btn" onclick="answerQuestion('C')" class="quiz-button">Answer C</button>
+                    <button id="answer-d-btn" onclick="answerQuestion('D')" class="quiz-button">Answer D</button>
+                </div>
+            </div>
+        </section>
+        <!-- QUESTION CONTAINER END-->
 
     </main>
     <!-- MAIN SECTION END -->
