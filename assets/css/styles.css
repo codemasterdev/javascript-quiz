@@ -1,0 +1,257 @@
+  :root {
+    --background-black: rgb(32, 31, 31);
+    --text-yellow: rgb(230, 230, 63);
+    --secondary-text-orange: rgb(212, 114, 34);
+    --tertiary-text-peach: rgb(233, 194, 160);
+    --question-button-violet: rgb(185, 107, 133);
+    --input-bg-gray: rgb(66, 65, 65);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    width: 100%;
+    background: var(--background-black);
+    color: var(--text-yellow);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  
+  a {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  a:visited {
+    color: var(--text-yellow);
+  }
+  
+  main {
+    width: 100%;
+  }
+  
+  header {
+    position: sticky;
+    width: 100%;
+  }
+  
+  .view-quiz-time p {
+    font-size: 1rem;
+    color: var(--question-button-violet);
+  }
+  .header-links {
+    /* Links in header should wrap for responsiveness */
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* *** LANDING PAGE INTRODUCTORY CONTENT *** */
+  /* Style the title text */
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* The J in JavaScript */
+  h1::first-letter {
+    font-size: 6rem;
+    color: var(--secondary-text-orange);
+  }
+  
+  /* Sub-title text */
+  .quiz-sub-title {
+    font-size: 1.4rem;
+    color: var(--secondary-text-orange);
+  }
+  
+  /* Set the widths, margins, and positioning of welcome text */
+  #quiz-intro-container {
+    width: 80%;
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  /* Instructions paragraph */
+  #quiz-intro-container p {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--tertiary-text-peach);
+    width: 50%;
+    font-family: monospace, Arial, sans serif;
+    margin: 3rem auto;
+  }
+  
+  /* Button styling */
+  .btn {
+    background: rgb(32, 31, 31);
+    color: var(--text-yellow);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 2px solid var(--text-yellow);
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1rem;
+  }
+  
+  .btn:hover {
+    transition: 0.5s;
+    background: var(--text-yellow);
+    color: black;
+  }
+  
+  /* Override the padding for the Submit button to be of better proportions */
+  #submit-button,
+  #go-back-button,
+  #clear-button {
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+  
+  /* * QUIZ CONTAINER WITH QUESTIONS AND ANSWERS */
+  
+  #question-container {
+    width: 100%;
+    /* Center the content */
+  }
+  
+  .question-title-text {
+    width: 40%;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .multiple-choice-options {
+    font-size: 1rem;
+    list-style: none;
+    display: grid;
+    place-items: center;
+  }
+  
+  /* Style the quetion buttons and add hover effect below */
+  .quiz-button {
+    padding: 1rem;
+    margin: 1rem 0;
+    background: var(--question-button-violet);
+    width: 40%;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--background-black);
+    cursor: pointer;
+  }
+  
+  .quiz-button:hover {
+    background: var(--tertiary-text-peach);
+  }
+  
+  /* Set the container/top-border width */
+  #answer-text-container {
+    width: 100%;
+  }
+  
+  /* Place the text aligned with the question title */
+  .answer-text {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .answer-text h3 {
+    width: 40%;
+    border-top: 2px solid var(--text-yellow);
+    font-size: 2rem;
+    padding-top: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .correct-incorrect-text {
+    border-top: 2px solid var(--text-yellow);
+    font-size: 2.4rem;
+    text-align: left;
+    padding-top: 1.6rem;
+  }
+  
+  #input-high-score-container,
+  #high-score-display-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  
+  .end-game-text-content,
+  .high-score-content {
+    text-align: left;
+  }
+  
+  .end-game-title,
+  .high-scores-title-text {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+  }
+  
+  .end-game-sub-title {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  
+  .enter-initials-container label {
+    font-size: 1.2rem;
+  }
+  
+  /* Place and style the submit form */
+  #submit-form {
+    justify-content: center;
+  }
+  
+  form {
+    justify-content: center;
+  }
+  
+  #submit-form input {
+    background: var(--input-bg-gray);
+    color: var(--tertiary-text-peach);
+    font-size: 1.3rem;
+    font-family: monospace;
+    margin: 10px 10px;
+  }
+  
+  /* Give each list item width more than the container  */
+  .high-scores-list {
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .high-scores-list li {
+    font-size: 1.5rem;
+    list-style: none;
+    background: var(--input-bg-gray);
+    padding: 1rem 0;
+    color: var(--text-yellow);
+  }
+  
+  .high-score-nav-buttons {
+    /* Make buttons responsive to stacking via flex-wrap */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  /* Utility class to hide elements */
+  .hidden {
+    display: none;
+  }
