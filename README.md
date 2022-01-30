@@ -21,3 +21,8 @@ This is an interactive ten-question multiple-choice quiz game about JavaScript!
 - `GitHub`
 - `JavaScript`
 - Coded with `VS Code`
+
+## Images
+
+![](assets/images/quiz.png)
+![](assets/images/quiz-2.png)
