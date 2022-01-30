@@ -22,6 +22,9 @@ This is an interactive ten-question multiple-choice quiz game about JavaScript!
 - `JavaScript`
 - Coded with `VS Code`
 
+## Contribution
+Made with ❤️ by [Devon Webster]
+
 ## Images
 
 ![](assets/images/quiz.png)
